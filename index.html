@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="EligibleMe - Discover government schemes you're eligible for based on your personal details. Find scholarships, loans, pensions, and welfare schemes.">
+  <title>EligibleMe – Government Scheme Eligibility Checker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <a href="#" class="nav-brand">
+      <div class="logo-icon">✅</div>
+      EligibleMe
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#check">Check Eligibility</a></li>
+      <li><a href="#browse">Browse Schemes</a></li>
+      <li><a href="#tips">Awareness</a></li>
+    </ul>
+    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">☰</button>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-badge">🇮🇳 Empowering Indian Citizens</div>
+    <h1><span class="gradient-text">EligibleMe</span></h1>
+    <p class="hero-slogan">Know Your Rights, Claim Your Benefits</p>
+    <p>Discover government schemes you're eligible for in seconds. Enter your details and get personalized
+      recommendations from 40+ central government schemes.</p>
+    <div class="hero-actions">
+      <a href="#check" class="btn btn-primary">🔍 Check My Eligibility</a>
+      <a href="#browse" class="btn btn-secondary">📋 Browse All Schemes</a>
+    </div>
+    <div class="stats-bar">
+      <div class="stat-item">
+        <div class="stat-number" id="totalSchemes">40+</div>
+        <div class="stat-label">Government Schemes</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">8</div>
+        <div class="stat-label">Sectors Covered</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">100%</div>
+        <div class="stat-label">Free to Use</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Eligibility Checker Section -->
+  <section class="section" id="check">
+    <div class="section-header">
+      <h2>🔍 Check Your Eligibility</h2>
+      <p>Fill in your details below and we'll find the best government schemes for you</p>
+    </div>
+    <div class="eligibility-section">
+      <form id="eligibilityForm">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="age">Age *</label>
+            <input type="number" id="age" min="0" max="120" placeholder="Enter your age" required>
+          </div>
+          <div class="form-group">
+            <label for="gender">Gender *</label>
+            <select id="gender" required>
+              <option value="">Select Gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="state">State *</label>
+            <select id="state" required>
+              <option value="">Select State</option>
+              <option value="Andhra Pradesh">Andhra Pradesh</option>
+              <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+              <option value="Assam">Assam</option>
+              <option value="Bihar">Bihar</option>
+              <option value="Chhattisgarh">Chhattisgarh</option>
+              <option value="Goa">Goa</option>
+              <option value="Gujarat">Gujarat</option>
+              <option value="Haryana">Haryana</option>
+              <option value="Himachal Pradesh">Himachal Pradesh</option>
+              <option value="Jharkhand">Jharkhand</option>
+              <option value="Karnataka">Karnataka</option>
+              <option value="Kerala">Kerala</option>
+              <option value="Madhya Pradesh">Madhya Pradesh</option>
+              <option value="Maharashtra">Maharashtra</option>
+              <option value="Manipur">Manipur</option>
+              <option value="Meghalaya">Meghalaya</option>
+              <option value="Mizoram">Mizoram</option>
+              <option value="Nagaland">Nagaland</option>
+              <option value="Odisha">Odisha</option>
+              <option value="Punjab">Punjab</option>
+              <option value="Rajasthan">Rajasthan</option>
+              <option value="Sikkim">Sikkim</option>
+              <option value="Tamil Nadu">Tamil Nadu</option>
+              <option value="Telangana">Telangana</option>
+              <option value="Tripura">Tripura</option>
+              <option value="Uttar Pradesh">Uttar Pradesh</option>
+              <option value="Uttarakhand">Uttarakhand</option>
+              <option value="West Bengal">West Bengal</option>
+              <option value="Delhi">Delhi</option>
+              <option value="Jammu & Kashmir">Jammu & Kashmir</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="income">Annual Income (₹) *</label>
+            <input type="number" id="income" min="0" placeholder="e.g. 250000" required>
+          </div>
+          <div class="form-group">
+            <label for="education">Education Level *</label>
+            <select id="education" required>
+              <option value="">Select Education</option>
+              <option value="below 10th">Below 10th</option>
+              <option value="10th pass">10th Pass</option>
+              <option value="12th pass">12th Pass</option>
+              <option value="graduate">Graduate</option>
+              <option value="post-graduate">Post Graduate</option>
+              <option value="8th pass">8th Pass</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="occupation">Occupation *</label>
+            <select id="occupation" required>
+              <option value="">Select Occupation</option>
+              <option value="student">Student</option>
+              <option value="farmer">Farmer</option>
+              <option value="unemployed">Unemployed</option>
+              <option value="salaried">Salaried Employee</option>
+              <option value="self-employed">Self Employed</option>
+              <option value="startup founder">Startup Founder</option>
+              <option value="entrepreneur">Entrepreneur</option>
+              <option value="small business">Small Business Owner</option>
+              <option value="labourer">Labourer / Worker</option>
+              <option value="homemaker">Homemaker</option>
+              <option value="retired">Retired</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="category">Category *</label>
+            <select id="category" required>
+              <option value="">Select Category</option>
+              <option value="general">General</option>
+              <option value="obc">OBC</option>
+              <option value="sc">SC</option>
+              <option value="st">ST</option>
+              <option value="minority">Minority</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="disability">Disability Status *</label>
+            <select id="disability" required>
+              <option value="">Select</option>
+              <option value="no">No Disability</option>
+              <option value="yes">Person with Disability</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="maritalStatus">Marital Status *</label>
+            <select id="maritalStatus" required>
+              <option value="">Select</option>
+              <option value="single">Single</option>
+              <option value="married">Married</option>
+              <option value="widowed">Widowed</option>
+              <option value="divorced">Divorced</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-submit">
+          <button type="submit" class="btn btn-primary" id="checkBtn">🔍 Find My Schemes</button>
+        </div>
+      </form>
+
+      <!-- Results -->
+      <div class="results-container" id="resultsContainer" style="display:none;">
+        <div class="results-header">
+          <div class="results-count">Found <span id="resultCount">0</span> eligible schemes for you!</div>
+        </div>
+        <div class="schemes-grid" id="resultsGrid"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Browse Schemes -->
+  <section class="section" id="browse">
+    <div class="section-header">
+      <h2>📋 Browse Government Schemes</h2>
+      <p>Explore all available schemes by sector or search by name</p>
+    </div>
+    <div class="search-container">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="searchInput" placeholder="Search schemes by name or keyword...">
+    </div>
+    <div class="sector-filters" id="sectorFilters">
+      <button class="sector-chip active" data-sector="all">All Schemes</button>
+    </div>
+    <div class="schemes-grid" id="browseGrid">
+      <div class="loading-state">
+        <div class="spinner"></div>
+        <p style="margin-top:16px;color:var(--text-muted);">Loading schemes...</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Awareness Tips -->
+  <section class="section" id="tips">
+    <div class="section-header">
+      <h2>💡 Awareness Tips</h2>
+      <p>Important things every citizen should know about government schemes</p>
+    </div>
+    <div class="tips-grid">
+      <div class="tip-card animate-in">
+        <div class="tip-icon">📋</div>
+        <h3>Keep Documents Ready</h3>
+        <p>Always keep your Aadhaar Card, Income Certificate, Caste Certificate, and Bank Passbook updated and ready.
+          Most schemes require these basic documents.</p>
+      </div>
+      <div class="tip-card animate-in">
+        <div class="tip-icon">⏰</div>
+        <h3>Apply Before Deadlines</h3>
+        <p>Many scholarship and welfare schemes have strict deadlines. Check the last date regularly and apply well in
+          advance to avoid last-minute technical issues.</p>
+      </div>
+      <div class="tip-card animate-in">
+        <div class="tip-icon">🏛️</div>
+        <h3>Use Official Portals Only</h3>
+        <p>Always apply through official government websites (.gov.in or .nic.in). Beware of fake websites and agents
+          who charge money for free government schemes.</p>
+      </div>
+      <div class="tip-card animate-in">
+        <div class="tip-icon">🔄</div>
+        <h3>Check Eligibility Regularly</h3>
+        <p>Government launches new schemes regularly. Check your eligibility periodically as new benefits may become
+          available based on changes in your life situation.</p>
+      </div>
+      <div class="tip-card animate-in">
+        <div class="tip-icon">📱</div>
+        <h3>Use mParivahan & DigiLocker</h3>
+        <p>Store your documents digitally using DigiLocker and UMANG apps. These are accepted by most government
+          departments and make applications easier.</p>
+      </div>
+      <div class="tip-card animate-in">
+        <div class="tip-icon">🤝</div>
+        <h3>Visit Your CSC Center</h3>
+        <p>Common Service Centres (CSCs) in your area can help you apply for various government schemes if you face
+          difficulties applying online.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>✅ <strong>EligibleMe</strong> – Empowering citizens with knowledge of their rights and entitlements.</p>
+    <p style="margin-top:8px;">This is an information platform. Always verify details on official government websites.
+    </p>
+    <div class="footer-links">
+      <a href="https://india.gov.in" target="_blank">India.gov.in</a>
+      <a href="https://scholarships.gov.in" target="_blank">National Scholarships</a>
+      <a href="https://pmjay.gov.in" target="_blank">Ayushman Bharat</a>
+      <a href="https://eshram.gov.in" target="_blank">e-Shram</a>
+    </div>
+  </footer>
+
+  <!-- Scheme Detail Modal -->
+  <div class="modal-overlay" id="schemeModal">
+    <div class="modal">
+      <button class="modal-close" id="modalClose">✕</button>
+      <h2 id="modalTitle"></h2>
+      <div class="modal-sector" id="modalSector"></div>
+      <div class="modal-section">
+        <h4>📝 Description</h4>
+        <p id="modalDesc"></p>
+      </div>
+      <div class="modal-section">
+        <h4>🎁 Benefits</h4>
+        <p id="modalBenefits"></p>
+      </div>
+      <div class="modal-section">
+        <h4>✅ Eligibility Criteria</h4>
+        <p id="modalEligibility"></p>
+      </div>
+      <div class="modal-section">
+        <h4>📄 Required Documents</h4>
+        <ul id="modalDocs"></ul>
+      </div>
+      <div class="modal-section" id="modalDateSection">
+        <h4>📅 Last Date</h4>
+        <p id="modalDate"></p>
+      </div>
+      <a href="#" class="apply-link" id="modalApplyLink" target="_blank">Apply Now →</a>
+    </div>
+  </div>
+
+  <!-- Chatbot Widget -->
+  <button class="chatbot-fab" id="chatbotFab" aria-label="Open chatbot">💬</button>
+  <div class="chatbot-panel" id="chatbotPanel">
+    <div class="chatbot-header">
+      <div class="bot-avatar">🤖</div>
+      <div class="bot-info">
+        <h4>EligibleMe Assistant</h4>
+        <span>Online • Ask me about schemes</span>
+      </div>
+    </div>
+    <div class="chatbot-messages" id="chatMessages">
+      <div class="chat-msg bot">Hello! 👋 I'm your EligibleMe assistant. Ask me about government schemes, eligibility,
+        documents, or how to apply!</div>
+    </div>
+    <div class="chat-suggestions" id="chatSuggestions">
+      <button class="chat-suggestion" data-msg="Schemes for students">🎓 Students</button>
+      <button class="chat-suggestion" data-msg="Schemes for farmers">🌾 Farmers</button>
+      <button class="chat-suggestion" data-msg="Schemes for women">👩 Women</button>
+      <button class="chat-suggestion" data-msg="Schemes for startups">💼 Startups</button>
+      <button class="chat-suggestion" data-msg="How to apply?">📝 How to apply</button>
+      <button class="chat-suggestion" data-msg="What documents do I need?">📄 Documents</button>
+    </div>
+    <div class="chatbot-input">
+      <input type="text" id="chatInput" placeholder="Type your question..." autocomplete="off">
+      <button id="chatSendBtn" aria-label="Send message">➤</button>
+    </div>
+  </div>
+
+  <!-- WhatsApp Notification Widget -->
+  <button class="wa-fab" id="waFab" aria-label="Get WhatsApp alerts">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+    </svg>
+  </button>
+  <div class="wa-panel" id="waPanel">
+    <div class="wa-panel-header">
+      <div class="wa-header-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+        </svg>
+      </div>
+      <div class="wa-header-text">
+        <h4>WhatsApp Alerts</h4>
+        <span>Get scheme updates &amp; deadlines</span>
+      </div>
+      <button class="wa-close" id="waClose" aria-label="Close">✕</button>
+    </div>
+    <div class="wa-panel-body" id="waPanelBody">
+      <div class="wa-info-banner">
+        <span class="wa-bell">🔔</span>
+        <p>Never miss a scheme deadline! We'll send you WhatsApp alerts for:</p>
+      </div>
+      <ul class="wa-features">
+        <li>📅 Upcoming application deadlines</li>
+        <li>🆕 Newly launched government schemes</li>
+        <li>✅ Schemes matching your profile</li>
+        <li>📢 Important policy updates</li>
+      </ul>
+      <div class="wa-input-group">
+        <label for="waNumber">Your WhatsApp Number</label>
+        <div class="wa-phone-row">
+          <span class="wa-country-code">🇮🇳 +91</span>
+          <input type="tel" id="waNumber" placeholder="e.g. 98765 43210" maxlength="10" autocomplete="tel">
+        </div>
+      </div>
+      <button class="wa-subscribe-btn" id="waSubscribeBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+        </svg>
+        Subscribe to Alerts
+      </button>
+      <p class="wa-privacy">🔒 Your number is safe. No spam, unsubscribe anytime.</p>
+    </div>
+    <div class="wa-success" id="waSuccess" style="display:none;">
+      <div class="wa-success-icon">✅</div>
+      <h4>You're subscribed!</h4>
+      <p>WhatsApp alerts for deadlines &amp; new schemes will be sent to</p>
+      <strong class="wa-confirmed-number" id="waConfirmedNumber"></strong>
+      <p class="wa-success-note">You'll receive your first update within 24 hours.</p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,2926 @@
+[
+    {
+        "id": 1,
+        "name": "National Scholarship Portal (NSP)",
+        "sector": "Education",
+        "description": "Centralized portal offering scholarships from central and state governments for students across India.",
+        "benefits": "Financial assistance for tuition fees, maintenance allowance, and other academic expenses.",
+        "eligibility": {
+            "age_min": 16,
+            "age_max": 35,
+            "gender": "all",
+            "income_max": 800000,
+            "occupation": [
+                "student"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "10th pass",
+                "12th pass",
+                "graduate",
+                "post-graduate"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Income Certificate",
+            "Caste Certificate",
+            "Marksheets",
+            "Bank Passbook",
+            "Passport Photo"
+        ],
+        "apply_link": "https://scholarships.gov.in/",
+        "last_date": "2026-10-31"
+    },
+    {
+        "id": 2,
+        "name": "PM Scholarship Scheme",
+        "sector": "Education",
+        "description": "Scholarship for wards of ex-servicemen/ex-coast guard personnel for professional degree courses.",
+        "benefits": "Rs 3,000/month for boys and Rs 3,600/month for girls for the duration of the course.",
+        "eligibility": {
+            "age_min": 18,
+            "age_max": 30,
+            "gender": "all",
+            "income_max": 600000,
+            "occupation": [
+                "student"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "12th pass",
+                "graduate"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Ex-Serviceman Certificate",
+            "Marksheets",
+            "Bank Account",
+            "Passport Photo"
+        ],
+        "apply_link": "https://ksb.gov.in/",
+        "last_date": "2026-12-15"
+    },
+    {
+        "id": 3,
+        "name": "AICTE Pragati Scholarship (Girls)",
+        "sector": "Education",
+        "description": "Scholarship for girl students pursuing technical education in AICTE approved institutions.",
+        "benefits": "Rs 50,000 per annum for tuition fees and incidentals.",
+        "eligibility": {
+            "age_min": 17,
+            "age_max": 30,
+            "gender": "female",
+            "income_max": 800000,
+            "occupation": [
+                "student"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "12th pass",
+                "graduate"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Income Certificate",
+            "Admission Letter",
+            "Marksheets",
+            "Bank Account"
+        ],
+        "apply_link": "https://www.aicte-india.org/",
+        "last_date": "2026-11-30"
+    },
+    {
+        "id": 4,
+        "name": "AICTE Saksham Scholarship",
+        "sector": "Education",
+        "description": "Scholarship for differently-abled students in AICTE approved technical institutions.",
+        "benefits": "Rs 50,000 per annum for tuition and incidentals.",
+        "eligibility": {
+            "age_min": 17,
+            "age_max": 30,
+            "gender": "all",
+            "income_max": 800000,
+            "occupation": [
+                "student"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "yes",
+            "education": [
+                "12th pass",
+                "graduate"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Disability Certificate",
+            "Income Certificate",
+            "Marksheets",
+            "Bank Account"
+        ],
+        "apply_link": "https://www.aicte-india.org/",
+        "last_date": "2026-11-30"
+    },
+    {
+        "id": 5,
+        "name": "Central Sector Scholarship Scheme",
+        "sector": "Education",
+        "description": "Merit-based scholarship for college and university students from economically weaker sections.",
+        "benefits": "Rs 10,000-20,000 per annum at graduation level, Rs 20,000 at post-graduation.",
+        "eligibility": {
+            "age_min": 17,
+            "age_max": 32,
+            "gender": "all",
+            "income_max": 450000,
+            "occupation": [
+                "student"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "12th pass",
+                "graduate"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Income Certificate",
+            "12th Marksheet",
+            "College ID",
+            "Bank Account"
+        ],
+        "apply_link": "https://scholarships.gov.in/",
+        "last_date": "2026-10-31"
+    },
+    {
+        "id": 6,
+        "name": "INSPIRE Scholarship",
+        "sector": "Education",
+        "description": "Innovation in Science Pursuit for Inspired Research – scholarship for science students.",
+        "benefits": "Rs 80,000 per annum for pursuing BSc/BS/Int MSc courses in natural and basic sciences.",
+        "eligibility": {
+            "age_min": 17,
+            "age_max": 22,
+            "gender": "all",
+            "income_max": 9999999,
+            "occupation": [
+                "student"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "12th pass"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "12th Marksheet",
+            "Admission Letter",
+            "Bank Account"
+        ],
+        "apply_link": "https://online-inspire.gov.in/",
+        "last_date": "2026-10-31"
+    },
+    {
+        "id": 7,
+        "name": "Post Matric Scholarship for SC/ST/OBC",
+        "sector": "Education",
+        "description": "Scholarship for SC/ST/OBC students studying in post-matriculation or post-secondary courses.",
+        "benefits": "Full tuition fees, maintenance allowance, and other allowances.",
+        "eligibility": {
+            "age_min": 15,
+            "age_max": 40,
+            "gender": "all",
+            "income_max": 250000,
+            "occupation": [
+                "student"
+            ],
+            "category": [
+                "sc",
+                "st",
+                "obc"
+            ],
+            "disability": "all",
+            "education": [
+                "10th pass",
+                "12th pass",
+                "graduate",
+                "post-graduate"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Caste Certificate",
+            "Income Certificate",
+            "Marksheets",
+            "Bank Account"
+        ],
+        "apply_link": "https://scholarships.gov.in/",
+        "last_date": "2026-10-31"
+    },
+    {
+        "id": 8,
+        "name": "Minority Scholarship Scheme",
+        "sector": "Education",
+        "description": "Pre and post matric scholarship for students belonging to minority communities.",
+        "benefits": "Tuition fee reimbursement and maintenance allowance.",
+        "eligibility": {
+            "age_min": 15,
+            "age_max": 35,
+            "gender": "all",
+            "income_max": 200000,
+            "occupation": [
+                "student"
+            ],
+            "category": [
+                "minority"
+            ],
+            "disability": "all",
+            "education": [
+                "10th pass",
+                "12th pass",
+                "graduate"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Minority Community Certificate",
+            "Income Certificate",
+            "Marksheets",
+            "Bank Account"
+        ],
+        "apply_link": "https://scholarships.gov.in/",
+        "last_date": "2026-10-31"
+    },
+    {
+        "id": 9,
+        "name": "Vidyalakshmi Education Loan Scheme",
+        "sector": "Education",
+        "description": "Portal providing information and access to education loans from multiple banks.",
+        "benefits": "Education loans with subsidized interest rates for economically weaker students.",
+        "eligibility": {
+            "age_min": 17,
+            "age_max": 35,
+            "gender": "all",
+            "income_max": 450000,
+            "occupation": [
+                "student"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "12th pass",
+                "graduate"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Admission Letter",
+            "Fee Structure",
+            "Income Certificate",
+            "Collateral Documents"
+        ],
+        "apply_link": "https://www.vidyalakshmi.co.in/",
+        "last_date": null
+    },
+    {
+        "id": 10,
+        "name": "National Means Cum Merit Scholarship",
+        "sector": "Education",
+        "description": "Scholarship for meritorious students of economically weaker sections to reduce dropouts at class 8.",
+        "benefits": "Rs 12,000 per annum from class 9 to class 12.",
+        "eligibility": {
+            "age_min": 13,
+            "age_max": 18,
+            "gender": "all",
+            "income_max": 350000,
+            "occupation": [
+                "student"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "below 10th"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Income Certificate",
+            "Marksheets",
+            "Bank Account",
+            "School Certificate"
+        ],
+        "apply_link": "https://scholarships.gov.in/",
+        "last_date": "2026-10-31"
+    },
+    {
+        "id": 11,
+        "name": "UGC Post Graduate Scholarship",
+        "sector": "Education",
+        "description": "Scholarship for students pursuing post-graduate studies in university departments.",
+        "benefits": "Rs 3,100/month for humanities, Rs 7,800/month for sciences for 2 years.",
+        "eligibility": {
+            "age_min": 20,
+            "age_max": 35,
+            "gender": "all",
+            "income_max": 9999999,
+            "occupation": [
+                "student"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "graduate",
+                "post-graduate"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Graduation Marksheet",
+            "Admission Letter",
+            "Bank Account"
+        ],
+        "apply_link": "https://www.ugc.gov.in/",
+        "last_date": "2026-09-30"
+    },
+    {
+        "id": 12,
+        "name": "PM Research Fellowship",
+        "sector": "Education",
+        "description": "Direct entry fellowship for BTech students into PhD programmes at IITs and IISc.",
+        "benefits": "Rs 70,000-80,000/month fellowship with research grant of Rs 2 lakh/year.",
+        "eligibility": {
+            "age_min": 20,
+            "age_max": 30,
+            "gender": "all",
+            "income_max": 9999999,
+            "occupation": [
+                "student"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "graduate"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "BTech Marksheets",
+            "GATE Score",
+            "Research Proposal",
+            "Bank Account"
+        ],
+        "apply_link": "https://pmrf.in/",
+        "last_date": "2026-04-30"
+    },
+    {
+        "id": 13,
+        "name": "Digital India Internship Scheme",
+        "sector": "Education",
+        "description": "Internship opportunities for students in various government digital initiatives.",
+        "benefits": "Stipend of Rs 10,000/month, certificate, and hands-on experience in government projects.",
+        "eligibility": {
+            "age_min": 18,
+            "age_max": 25,
+            "gender": "all",
+            "income_max": 9999999,
+            "occupation": [
+                "student"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "graduate",
+                "post-graduate"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "College ID",
+            "Resume",
+            "Bank Account"
+        ],
+        "apply_link": "https://www.digitalindia.gov.in/",
+        "last_date": "2026-06-30"
+    },
+    {
+        "id": 14,
+        "name": "KVPY Fellowship (Science Students)",
+        "sector": "Education",
+        "description": "Kishore Vaigyanik Protsahan Yojana – fellowship for students interested in basic science research.",
+        "benefits": "Monthly fellowship of Rs 5,000-7,000 plus annual contingency grant.",
+        "eligibility": {
+            "age_min": 16,
+            "age_max": 22,
+            "gender": "all",
+            "income_max": 9999999,
+            "occupation": [
+                "student"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "12th pass",
+                "graduate"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Marksheets",
+            "KVPY Admit Card",
+            "Bank Account"
+        ],
+        "apply_link": "https://kvpy.iisc.ac.in/",
+        "last_date": "2026-08-31"
+    },
+    {
+        "id": 15,
+        "name": "State Merit Scholarships",
+        "sector": "Education",
+        "description": "Merit-based scholarships offered by individual state governments for domicile students.",
+        "benefits": "Varies by state – typically Rs 5,000-25,000/year based on merit and category.",
+        "eligibility": {
+            "age_min": 15,
+            "age_max": 30,
+            "gender": "all",
+            "income_max": 500000,
+            "occupation": [
+                "student"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "10th pass",
+                "12th pass",
+                "graduate"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Domicile Certificate",
+            "Income Certificate",
+            "Marksheets",
+            "Bank Account"
+        ],
+        "apply_link": "https://scholarships.gov.in/",
+        "last_date": "2026-10-31"
+    },
+    {
+        "id": 20,
+        "name": "Beti Bachao Beti Padhao",
+        "sector": "Women Welfare",
+        "description": "Campaign to generate awareness and improve efficiency of welfare services for girls.",
+        "benefits": "Awareness campaigns, improved girl child birth ratio, education support for girls.",
+        "eligibility": {
+            "age_min": 0,
+            "age_max": 25,
+            "gender": "female",
+            "income_max": 9999999,
+            "occupation": [
+                "all"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Birth Certificate",
+            "Aadhaar Card",
+            "School Records"
+        ],
+        "apply_link": "https://wcd.nic.in/bbbp-schemes",
+        "last_date": null
+    },
+    {
+        "id": 21,
+        "name": "Sukanya Samriddhi Yojana",
+        "sector": "Women Welfare",
+        "description": "Small savings scheme for girl child with high interest rate and tax benefits.",
+        "benefits": "High interest rate (8%+), tax exemption under 80C, maturity at age 21.",
+        "eligibility": {
+            "age_min": 0,
+            "age_max": 10,
+            "gender": "female",
+            "income_max": 9999999,
+            "occupation": [
+                "all"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Girl Child Birth Certificate",
+            "Parent Aadhaar Card",
+            "Address Proof"
+        ],
+        "apply_link": "https://www.indiapost.gov.in/",
+        "last_date": null
+    },
+    {
+        "id": 22,
+        "name": "PM Matru Vandana Yojana",
+        "sector": "Women Welfare",
+        "description": "Cash incentive for pregnant and lactating women for first live birth.",
+        "benefits": "Rs 5,000 in three installments for first live birth.",
+        "eligibility": {
+            "age_min": 19,
+            "age_max": 50,
+            "gender": "female",
+            "income_max": 9999999,
+            "occupation": [
+                "all"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "married"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "MCP Card",
+            "Bank Account",
+            "Pregnancy Certificate"
+        ],
+        "apply_link": "https://pmmvy.wcd.gov.in/",
+        "last_date": null
+    },
+    {
+        "id": 23,
+        "name": "Mahila E-Haat",
+        "sector": "Women Welfare",
+        "description": "Online marketing platform for women entrepreneurs to showcase and sell their products.",
+        "benefits": "Free online marketplace, direct access to customers, marketing support for women-made products.",
+        "eligibility": {
+            "age_min": 18,
+            "age_max": 65,
+            "gender": "female",
+            "income_max": 9999999,
+            "occupation": [
+                "self-employed",
+                "entrepreneur",
+                "small business",
+                "startup founder"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Product Details",
+            "Bank Account",
+            "Photos"
+        ],
+        "apply_link": "https://mahilaehaat-rmk.gov.in/",
+        "last_date": null
+    },
+    {
+        "id": 24,
+        "name": "Stand-Up India Scheme",
+        "sector": "Women Welfare",
+        "description": "Bank loans between Rs 10 lakh and Rs 1 crore for SC/ST and women entrepreneurs.",
+        "benefits": "Composite loan for setting up greenfield enterprise in manufacturing, services, or trading.",
+        "eligibility": {
+            "age_min": 18,
+            "age_max": 65,
+            "gender": "female",
+            "income_max": 9999999,
+            "occupation": [
+                "startup founder",
+                "entrepreneur",
+                "self-employed"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "PAN Card",
+            "Business Plan",
+            "IT Returns",
+            "Address Proof"
+        ],
+        "apply_link": "https://www.standupmitra.in/",
+        "last_date": null
+    },
+    {
+        "id": 25,
+        "name": "Ujjwala Yojana (LPG)",
+        "sector": "Women Welfare",
+        "description": "Free LPG connections to women from BPL households.",
+        "benefits": "Free LPG connection, deposit-free, and first refill free.",
+        "eligibility": {
+            "age_min": 18,
+            "age_max": 70,
+            "gender": "female",
+            "income_max": 200000,
+            "occupation": [
+                "all"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "BPL Card",
+            "Bank Account",
+            "Passport Photo"
+        ],
+        "apply_link": "https://www.pmuy.gov.in/",
+        "last_date": null
+    },
+    {
+        "id": 26,
+        "name": "Working Women Hostel Scheme",
+        "sector": "Women Welfare",
+        "description": "Safe and affordable hostel accommodation for working women in cities.",
+        "benefits": "Subsidized hostel accommodation with day care facility for children.",
+        "eligibility": {
+            "age_min": 18,
+            "age_max": 55,
+            "gender": "female",
+            "income_max": 500000,
+            "occupation": [
+                "salaried",
+                "self-employed",
+                "student"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Employment Proof",
+            "Income Certificate",
+            "Address Proof"
+        ],
+        "apply_link": "https://wcd.nic.in/",
+        "last_date": null
+    },
+    {
+        "id": 27,
+        "name": "One Stop Centre Scheme",
+        "sector": "Women Welfare",
+        "description": "Support for women affected by violence – integrated services under one roof.",
+        "benefits": "Medical aid, legal aid, counselling, temporary shelter, police facilitation.",
+        "eligibility": {
+            "age_min": 0,
+            "age_max": 100,
+            "gender": "female",
+            "income_max": 9999999,
+            "occupation": [
+                "all"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Any ID Proof (optional – services available without documents)"
+        ],
+        "apply_link": "https://wcd.nic.in/",
+        "last_date": null
+    },
+    {
+        "id": 28,
+        "name": "Annapurna Scheme (Women)",
+        "sector": "Women Welfare",
+        "description": "Food security scheme providing free foodgrains to destitute senior women.",
+        "benefits": "10 kg of foodgrains per month free of cost to eligible senior women.",
+        "eligibility": {
+            "age_min": 60,
+            "age_max": 100,
+            "gender": "female",
+            "income_max": 100000,
+            "occupation": [
+                "all"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Age Proof",
+            "BPL Card",
+            "Income Certificate"
+        ],
+        "apply_link": "https://nfsa.gov.in/",
+        "last_date": null
+    },
+    {
+        "id": 29,
+        "name": "Mudra Loan for Women",
+        "sector": "Women Welfare",
+        "description": "Collateral-free loans for women entrepreneurs under Mudra scheme.",
+        "benefits": "Loans up to Rs 10 lakh without collateral – Shishu (50K), Kishore (5L), Tarun (10L).",
+        "eligibility": {
+            "age_min": 18,
+            "age_max": 65,
+            "gender": "female",
+            "income_max": 9999999,
+            "occupation": [
+                "startup founder",
+                "entrepreneur",
+                "self-employed",
+                "small business"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "PAN Card",
+            "Business Plan",
+            "Address Proof",
+            "Photos"
+        ],
+        "apply_link": "https://www.mudra.org.in/",
+        "last_date": null
+    },
+    {
+        "id": 30,
+        "name": "Mahila Shakti Kendra",
+        "sector": "Women Welfare",
+        "description": "Community engagement through student volunteers in underserved districts for women empowerment.",
+        "benefits": "Skill development, digital literacy, health & nutrition awareness for rural women.",
+        "eligibility": {
+            "age_min": 18,
+            "age_max": 60,
+            "gender": "female",
+            "income_max": 9999999,
+            "occupation": [
+                "all"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Address Proof"
+        ],
+        "apply_link": "https://wcd.nic.in/",
+        "last_date": null
+    },
+    {
+        "id": 31,
+        "name": "Dena Shakti Scheme",
+        "sector": "Women Welfare",
+        "description": "Concessional loans for women in agriculture, education, housing, and micro-credit.",
+        "benefits": "Loans up to Rs 20 lakh at concessional interest rate (0.25% below base rate).",
+        "eligibility": {
+            "age_min": 18,
+            "age_max": 60,
+            "gender": "female",
+            "income_max": 9999999,
+            "occupation": [
+                "farmer",
+                "self-employed",
+                "entrepreneur",
+                "small business"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "PAN Card",
+            "Business Plan",
+            "Income Proof",
+            "Bank Account"
+        ],
+        "apply_link": "https://www.bankofbaroda.in/",
+        "last_date": null
+    },
+    {
+        "id": 32,
+        "name": "STEP Scheme",
+        "sector": "Women Welfare",
+        "description": "Support to Training and Employment Programme for women – skill upgradation in traditional sectors.",
+        "benefits": "Free training in agriculture, horticulture, food processing, handlooms, tailoring, and more.",
+        "eligibility": {
+            "age_min": 16,
+            "age_max": 60,
+            "gender": "female",
+            "income_max": 9999999,
+            "occupation": [
+                "all"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Address Proof",
+            "Bank Account"
+        ],
+        "apply_link": "https://wcd.nic.in/",
+        "last_date": null
+    },
+    {
+        "id": 33,
+        "name": "Rashtriya Mahila Kosh",
+        "sector": "Women Welfare",
+        "description": "Micro-credit for poor women through NGOs and Self-Help Groups.",
+        "benefits": "Loans at low interest for income-generating activities through SHGs and NGOs.",
+        "eligibility": {
+            "age_min": 18,
+            "age_max": 60,
+            "gender": "female",
+            "income_max": 200000,
+            "occupation": [
+                "all"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "SHG Membership Proof",
+            "Bank Account"
+        ],
+        "apply_link": "https://rmk.nic.in/",
+        "last_date": null
+    },
+    {
+        "id": 34,
+        "name": "Nirbhaya Fund",
+        "sector": "Women Welfare",
+        "description": "Fund for projects related to women's safety including one-stop centres and women helplines.",
+        "benefits": "Access to women helpline (181), one-stop centres, safe city projects, emergency response.",
+        "eligibility": {
+            "age_min": 0,
+            "age_max": 100,
+            "gender": "female",
+            "income_max": 9999999,
+            "occupation": [
+                "all"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Any ID Proof (optional)"
+        ],
+        "apply_link": "https://wcd.nic.in/",
+        "last_date": null
+    },
+    {
+        "id": 40,
+        "name": "PM Kisan Samman Nidhi",
+        "sector": "Agriculture",
+        "description": "Income support of Rs 6,000 per year to all landholding farmer families.",
+        "benefits": "Rs 6,000 per year in three equal installments directly to bank account.",
+        "eligibility": {
+            "age_min": 18,
+            "age_max": 80,
+            "gender": "all",
+            "income_max": 9999999,
+            "occupation": [
+                "farmer"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Land Records",
+            "Bank Account",
+            "Passport Photo"
+        ],
+        "apply_link": "https://pmkisan.gov.in/",
+        "last_date": null
+    },
+    {
+        "id": 41,
+        "name": "PM Fasal Bima Yojana",
+        "sector": "Agriculture",
+        "description": "Crop insurance scheme providing financial support to farmers suffering crop loss.",
+        "benefits": "Insurance coverage for crop loss due to natural calamities, pests, and diseases.",
+        "eligibility": {
+            "age_min": 18,
+            "age_max": 70,
+            "gender": "all",
+            "income_max": 9999999,
+            "occupation": [
+                "farmer"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Land Records",
+            "Bank Account",
+            "Sowing Certificate"
+        ],
+        "apply_link": "https://pmfby.gov.in/",
+        "last_date": "2026-07-31"
+    },
+    {
+        "id": 42,
+        "name": "Kisan Credit Card",
+        "sector": "Agriculture",
+        "description": "Credit facility for farmers to meet agricultural and other needs.",
+        "benefits": "Short-term credit at subsidized interest rate (4% p.a.), Rs 3 lakh limit.",
+        "eligibility": {
+            "age_min": 18,
+            "age_max": 75,
+            "gender": "all",
+            "income_max": 9999999,
+            "occupation": [
+                "farmer"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Land Records",
+            "Bank Account",
+            "Passport Photo"
+        ],
+        "apply_link": "https://pmkisan.gov.in/",
+        "last_date": null
+    },
+    {
+        "id": 43,
+        "name": "Soil Health Card Scheme",
+        "sector": "Agriculture",
+        "description": "Provides soil health cards to farmers with crop-wise nutrient recommendations.",
+        "benefits": "Free soil testing, customized fertilizer recommendations, improved crop yield.",
+        "eligibility": {
+            "age_min": 18,
+            "age_max": 80,
+            "gender": "all",
+            "income_max": 9999999,
+            "occupation": [
+                "farmer"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Land Records"
+        ],
+        "apply_link": "https://soilhealth.dac.gov.in/",
+        "last_date": null
+    },
+    {
+        "id": 44,
+        "name": "e-NAM",
+        "sector": "Agriculture",
+        "description": "Electronic National Agriculture Market – online trading platform for agricultural produce.",
+        "benefits": "Transparent price discovery, direct sale to buyers, reduced middlemen, better prices for farmers.",
+        "eligibility": {
+            "age_min": 18,
+            "age_max": 80,
+            "gender": "all",
+            "income_max": 9999999,
+            "occupation": [
+                "farmer"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Land Records",
+            "Bank Account",
+            "Mobile Number"
+        ],
+        "apply_link": "https://enam.gov.in/",
+        "last_date": null
+    },
+    {
+        "id": 45,
+        "name": "PM Krishi Sinchai Yojana",
+        "sector": "Agriculture",
+        "description": "Irrigation support scheme to provide water to every farm (Har Khet Ko Paani).",
+        "benefits": "Subsidies on micro-irrigation, drip irrigation systems, water harvesting structures.",
+        "eligibility": {
+            "age_min": 18,
+            "age_max": 70,
+            "gender": "all",
+            "income_max": 9999999,
+            "occupation": [
+                "farmer"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Land Records",
+            "Bank Account"
+        ],
+        "apply_link": "https://pmksy.gov.in/",
+        "last_date": null
+    },
+    {
+        "id": 46,
+        "name": "Dairy Entrepreneurship Development Scheme",
+        "sector": "Agriculture",
+        "description": "Scheme to promote dairy farming and entrepreneurship in dairy sector.",
+        "benefits": "Subsidy of 25-33% for dairy units, calf rearing, milk processing equipment.",
+        "eligibility": {
+            "age_min": 18,
+            "age_max": 65,
+            "gender": "all",
+            "income_max": 9999999,
+            "occupation": [
+                "farmer",
+                "entrepreneur",
+                "self-employed"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Project Report",
+            "Bank Account",
+            "Land Records"
+        ],
+        "apply_link": "https://dahd.nic.in/",
+        "last_date": null
+    },
+    {
+        "id": 47,
+        "name": "National Livestock Mission",
+        "sector": "Agriculture",
+        "description": "Development of livestock sector including poultry, sheep, goat, and pig farming.",
+        "benefits": "Subsidy up to 50% for establishing livestock farms and feed units.",
+        "eligibility": {
+            "age_min": 18,
+            "age_max": 65,
+            "gender": "all",
+            "income_max": 9999999,
+            "occupation": [
+                "farmer",
+                "entrepreneur"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Project Report",
+            "Bank Account",
+            "Training Certificate"
+        ],
+        "apply_link": "https://dahd.nic.in/",
+        "last_date": null
+    },
+    {
+        "id": 48,
+        "name": "Paramparagat Krishi Vikas Yojana",
+        "sector": "Agriculture",
+        "description": "Promotes organic farming by forming clusters of farmers.",
+        "benefits": "Rs 50,000/hectare for 3 years for organic farming inputs, certification, and marketing.",
+        "eligibility": {
+            "age_min": 18,
+            "age_max": 70,
+            "gender": "all",
+            "income_max": 9999999,
+            "occupation": [
+                "farmer"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Land Records",
+            "Bank Account"
+        ],
+        "apply_link": "https://pgsindia-ncof.gov.in/",
+        "last_date": null
+    },
+    {
+        "id": 49,
+        "name": "Agri Infrastructure Fund",
+        "sector": "Agriculture",
+        "description": "Financing facility for post-harvest management infrastructure and community farming assets.",
+        "benefits": "Interest subvention of 3% on loans up to Rs 2 crore for agri-infrastructure.",
+        "eligibility": {
+            "age_min": 18,
+            "age_max": 70,
+            "gender": "all",
+            "income_max": 9999999,
+            "occupation": [
+                "farmer",
+                "entrepreneur",
+                "self-employed"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Project Report",
+            "Land Records",
+            "Bank Account"
+        ],
+        "apply_link": "https://agriinfra.dac.gov.in/",
+        "last_date": null
+    },
+    {
+        "id": 50,
+        "name": "PM Matsya Sampada Yojana",
+        "sector": "Agriculture",
+        "description": "Scheme for sustainable development of fisheries sector.",
+        "benefits": "Subsidy of 40-60% for fish farming, fish feed plant, cold storage, and boats.",
+        "eligibility": {
+            "age_min": 18,
+            "age_max": 65,
+            "gender": "all",
+            "income_max": 9999999,
+            "occupation": [
+                "farmer",
+                "self-employed"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Project Report",
+            "Bank Account",
+            "Land/Water Body Lease"
+        ],
+        "apply_link": "https://pmmsy.dof.gov.in/",
+        "last_date": null
+    },
+    {
+        "id": 51,
+        "name": "Farm Mechanization Scheme",
+        "sector": "Agriculture",
+        "description": "Subsidy on purchase of farm machinery and equipment.",
+        "benefits": "Subsidy of 40-50% on tractors, harvesters, tillers, and other farm equipment.",
+        "eligibility": {
+            "age_min": 18,
+            "age_max": 70,
+            "gender": "all",
+            "income_max": 9999999,
+            "occupation": [
+                "farmer"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Land Records",
+            "Bank Account",
+            "Quotation of Equipment"
+        ],
+        "apply_link": "https://agrimachinery.nic.in/",
+        "last_date": null
+    },
+    {
+        "id": 52,
+        "name": "PM KUSUM Scheme",
+        "sector": "Agriculture",
+        "description": "Solar energy scheme for farmers – solar pumps and grid-connected solar power plants.",
+        "benefits": "Subsidy up to 60% for solar pumps, additional income from solar power generation.",
+        "eligibility": {
+            "age_min": 18,
+            "age_max": 70,
+            "gender": "all",
+            "income_max": 9999999,
+            "occupation": [
+                "farmer"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Land Records",
+            "Bank Account",
+            "Electricity Bill"
+        ],
+        "apply_link": "https://mnre.gov.in/",
+        "last_date": null
+    },
+    {
+        "id": 53,
+        "name": "Organic Farming Subsidy",
+        "sector": "Agriculture",
+        "description": "Government subsidy for farmers transitioning to organic farming practices.",
+        "benefits": "Financial assistance for organic inputs, certification costs, and market linkage support.",
+        "eligibility": {
+            "age_min": 18,
+            "age_max": 70,
+            "gender": "all",
+            "income_max": 9999999,
+            "occupation": [
+                "farmer"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Land Records",
+            "Bank Account",
+            "Organic Certification"
+        ],
+        "apply_link": "https://pgsindia-ncof.gov.in/",
+        "last_date": null
+    },
+    {
+        "id": 60,
+        "name": "Startup India Scheme",
+        "sector": "Startups",
+        "description": "Government initiative to build a strong ecosystem for nurturing innovation and startups.",
+        "benefits": "Tax exemption for 3 years, self-certification compliance, patent fee rebate, fund of funds access.",
+        "eligibility": {
+            "age_min": 18,
+            "age_max": 65,
+            "gender": "all",
+            "income_max": 9999999,
+            "occupation": [
+                "startup founder",
+                "entrepreneur"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "PAN Card",
+            "Business Registration",
+            "DPIIT Certificate"
+        ],
+        "apply_link": "https://www.startupindia.gov.in/",
+        "last_date": null
+    },
+    {
+        "id": 61,
+        "name": "Stand-Up India (SC/ST)",
+        "sector": "Startups",
+        "description": "Bank loans for SC/ST entrepreneurs to set up greenfield enterprises.",
+        "benefits": "Composite loan between Rs 10 lakh to Rs 1 crore for SC/ST entrepreneurs.",
+        "eligibility": {
+            "age_min": 18,
+            "age_max": 65,
+            "gender": "all",
+            "income_max": 9999999,
+            "occupation": [
+                "startup founder",
+                "entrepreneur",
+                "self-employed"
+            ],
+            "category": [
+                "sc",
+                "st"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "PAN Card",
+            "Caste Certificate",
+            "Business Plan",
+            "Bank Account"
+        ],
+        "apply_link": "https://www.standupmitra.in/",
+        "last_date": null
+    },
+    {
+        "id": 62,
+        "name": "Mudra Loan (PMMY)",
+        "sector": "Startups",
+        "description": "Collateral-free loans up to Rs 10 lakh for non-corporate, non-farm small/micro enterprises.",
+        "benefits": "Shishu (up to 50K), Kishore (50K-5L), Tarun (5L-10L) – no collateral needed.",
+        "eligibility": {
+            "age_min": 18,
+            "age_max": 65,
+            "gender": "all",
+            "income_max": 9999999,
+            "occupation": [
+                "startup founder",
+                "entrepreneur",
+                "self-employed",
+                "small business"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "PAN Card",
+            "Business Plan",
+            "Address Proof",
+            "Photos"
+        ],
+        "apply_link": "https://www.mudra.org.in/",
+        "last_date": null
+    },
+    {
+        "id": 63,
+        "name": "Atal Innovation Mission (AIM)",
+        "sector": "Startups",
+        "description": "Promoting innovation and entrepreneurship through Atal Tinkering Labs and Incubation Centres.",
+        "benefits": "Grant of Rs 10 crore for incubation centres, Rs 20 lakh for tinkering labs.",
+        "eligibility": {
+            "age_min": 18,
+            "age_max": 50,
+            "gender": "all",
+            "income_max": 9999999,
+            "occupation": [
+                "startup founder",
+                "entrepreneur",
+                "student"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "graduate",
+                "post-graduate"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Business Plan",
+            "Organization Registration",
+            "Bank Account"
+        ],
+        "apply_link": "https://aim.gov.in/",
+        "last_date": null
+    },
+    {
+        "id": 64,
+        "name": "CGTMSE",
+        "sector": "Startups",
+        "description": "Credit Guarantee Fund Trust for Micro and Small Enterprises – collateral-free loans.",
+        "benefits": "Guarantee cover up to Rs 5 crore for MSE loans without collateral or third-party guarantee.",
+        "eligibility": {
+            "age_min": 18,
+            "age_max": 65,
+            "gender": "all",
+            "income_max": 9999999,
+            "occupation": [
+                "startup founder",
+                "entrepreneur",
+                "small business",
+                "self-employed"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "PAN Card",
+            "Business Registration",
+            "Project Report",
+            "Bank Account"
+        ],
+        "apply_link": "https://www.cgtmse.in/",
+        "last_date": null
+    },
+    {
+        "id": 65,
+        "name": "PMEGP",
+        "sector": "Startups",
+        "description": "Prime Minister Employment Generation Programme for setting up micro enterprises.",
+        "benefits": "Subsidy of 15-35% of project cost for manufacturing (up to 50L) and service (up to 20L).",
+        "eligibility": {
+            "age_min": 18,
+            "age_max": 65,
+            "gender": "all",
+            "income_max": 9999999,
+            "occupation": [
+                "startup founder",
+                "entrepreneur",
+                "unemployed",
+                "self-employed"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "8th pass"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Project Report",
+            "EDP Certificate",
+            "Caste Certificate",
+            "Bank Account"
+        ],
+        "apply_link": "https://www.kviconline.gov.in/pmegpeportal/",
+        "last_date": null
+    },
+    {
+        "id": 66,
+        "name": "SIDBI Fund Support",
+        "sector": "Startups",
+        "description": "SIDBI's Fund of Funds for startups and MSMEs through venture capital.",
+        "benefits": "Equity and quasi-equity funding through SIDBI-registered venture funds.",
+        "eligibility": {
+            "age_min": 18,
+            "age_max": 65,
+            "gender": "all",
+            "income_max": 9999999,
+            "occupation": [
+                "startup founder",
+                "entrepreneur"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "PAN Card",
+            "DPIIT Certificate",
+            "Business Plan",
+            "Financial Statements"
+        ],
+        "apply_link": "https://www.sidbi.in/",
+        "last_date": null
+    },
+    {
+        "id": 67,
+        "name": "Digital MSME Scheme",
+        "sector": "Startups",
+        "description": "Cloud computing and ICT adoption support for MSMEs.",
+        "benefits": "Subsidy on cloud computing, ICT tools, and digital infrastructure for MSMEs.",
+        "eligibility": {
+            "age_min": 18,
+            "age_max": 65,
+            "gender": "all",
+            "income_max": 9999999,
+            "occupation": [
+                "startup founder",
+                "entrepreneur",
+                "small business"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Udyam Registration",
+            "PAN Card",
+            "Bank Account"
+        ],
+        "apply_link": "https://msme.gov.in/",
+        "last_date": null
+    },
+    {
+        "id": 68,
+        "name": "Credit Linked Capital Subsidy",
+        "sector": "Startups",
+        "description": "Capital subsidy for technology upgradation of MSMEs.",
+        "benefits": "15% capital subsidy on institutional credit up to Rs 1 crore for technology upgradation.",
+        "eligibility": {
+            "age_min": 18,
+            "age_max": 65,
+            "gender": "all",
+            "income_max": 9999999,
+            "occupation": [
+                "entrepreneur",
+                "small business",
+                "self-employed"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Udyam Registration",
+            "Project Report",
+            "Bank Account"
+        ],
+        "apply_link": "https://msme.gov.in/",
+        "last_date": null
+    },
+    {
+        "id": 69,
+        "name": "ASPIRE Scheme",
+        "sector": "Startups",
+        "description": "Scheme for Promotion of Innovation, Rural Industry and Entrepreneurship.",
+        "benefits": "Livelihood business incubators, technology business incubators for rural innovation.",
+        "eligibility": {
+            "age_min": 18,
+            "age_max": 55,
+            "gender": "all",
+            "income_max": 9999999,
+            "occupation": [
+                "startup founder",
+                "entrepreneur",
+                "self-employed"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Business Plan",
+            "Bank Account",
+            "Organization Registration"
+        ],
+        "apply_link": "https://msme.gov.in/",
+        "last_date": null
+    },
+    {
+        "id": 70,
+        "name": "National SC/ST Hub",
+        "sector": "Startups",
+        "description": "Support to SC/ST entrepreneurs for participating in public procurement.",
+        "benefits": "Financial support, capacity building, and market linkage for SC/ST enterprises.",
+        "eligibility": {
+            "age_min": 18,
+            "age_max": 65,
+            "gender": "all",
+            "income_max": 9999999,
+            "occupation": [
+                "startup founder",
+                "entrepreneur",
+                "small business"
+            ],
+            "category": [
+                "sc",
+                "st"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Caste Certificate",
+            "Udyam Registration",
+            "Bank Account"
+        ],
+        "apply_link": "https://www.scsthub.in/",
+        "last_date": null
+    },
+    {
+        "id": 71,
+        "name": "GeM Registration",
+        "sector": "Startups",
+        "description": "Government e-Marketplace – online platform for public procurement of goods and services.",
+        "benefits": "Access to government procurement orders, transparent bidding, timely payments.",
+        "eligibility": {
+            "age_min": 18,
+            "age_max": 70,
+            "gender": "all",
+            "income_max": 9999999,
+            "occupation": [
+                "startup founder",
+                "entrepreneur",
+                "small business",
+                "self-employed"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "PAN Card",
+            "GST Certificate",
+            "Bank Account",
+            "Business Registration"
+        ],
+        "apply_link": "https://gem.gov.in/",
+        "last_date": null
+    },
+    {
+        "id": 80,
+        "name": "EPFO Scheme",
+        "sector": "Employment",
+        "description": "Employees' Provident Fund – social security scheme for salaried employees.",
+        "benefits": "Provident fund accumulation, pension after retirement, insurance coverage.",
+        "eligibility": {
+            "age_min": 18,
+            "age_max": 58,
+            "gender": "all",
+            "income_max": 9999999,
+            "occupation": [
+                "salaried",
+                "employee"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "PAN Card",
+            "Bank Account",
+            "Employer Details"
+        ],
+        "apply_link": "https://www.epfindia.gov.in/",
+        "last_date": null
+    },
+    {
+        "id": 81,
+        "name": "ESIC Scheme",
+        "sector": "Employment",
+        "description": "Employees' State Insurance – medical and cash benefits for workers earning up to Rs 21,000/month.",
+        "benefits": "Medical care, sickness benefit, maternity benefit, disablement benefit, dependant benefit.",
+        "eligibility": {
+            "age_min": 18,
+            "age_max": 58,
+            "gender": "all",
+            "income_max": 252000,
+            "occupation": [
+                "salaried",
+                "employee",
+                "worker"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Employer Details",
+            "Bank Account",
+            "Photo"
+        ],
+        "apply_link": "https://www.esic.gov.in/",
+        "last_date": null
+    },
+    {
+        "id": 82,
+        "name": "Atal Pension Yojana",
+        "sector": "Employment",
+        "description": "Pension scheme for unorganized sector workers with government co-contribution.",
+        "benefits": "Guaranteed pension of Rs 1,000-5,000/month after age 60.",
+        "eligibility": {
+            "age_min": 18,
+            "age_max": 40,
+            "gender": "all",
+            "income_max": 9999999,
+            "occupation": [
+                "all"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Bank Account",
+            "Mobile Number"
+        ],
+        "apply_link": "https://www.npscra.nsdl.co.in/",
+        "last_date": null
+    },
+    {
+        "id": 83,
+        "name": "PM Shram Yogi Maandhan",
+        "sector": "Employment",
+        "description": "Pension scheme for unorganized sector workers with monthly income below Rs 15,000.",
+        "benefits": "Monthly pension of Rs 3,000 after age 60.",
+        "eligibility": {
+            "age_min": 18,
+            "age_max": 40,
+            "gender": "all",
+            "income_max": 180000,
+            "occupation": [
+                "labourer",
+                "worker",
+                "self-employed",
+                "unemployed"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Bank Account",
+            "Mobile Number"
+        ],
+        "apply_link": "https://maandhan.in/",
+        "last_date": null
+    },
+    {
+        "id": 84,
+        "name": "National Career Service",
+        "sector": "Employment",
+        "description": "Online portal connecting job seekers with employers, counsellors, and training providers.",
+        "benefits": "Free job matching, career counselling, skill development resources, job fairs.",
+        "eligibility": {
+            "age_min": 15,
+            "age_max": 65,
+            "gender": "all",
+            "income_max": 9999999,
+            "occupation": [
+                "unemployed",
+                "student",
+                "salaried",
+                "worker"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Resume",
+            "Educational Certificates"
+        ],
+        "apply_link": "https://www.ncs.gov.in/",
+        "last_date": null
+    },
+    {
+        "id": 85,
+        "name": "Skill India Mission",
+        "sector": "Employment",
+        "description": "Umbrella scheme for skill development including PMKVY, apprenticeship, and industrial training.",
+        "benefits": "Free skill training, certification, placement support across 40+ sectors.",
+        "eligibility": {
+            "age_min": 15,
+            "age_max": 45,
+            "gender": "all",
+            "income_max": 9999999,
+            "occupation": [
+                "unemployed",
+                "student",
+                "worker"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Educational Certificates",
+            "Bank Account"
+        ],
+        "apply_link": "https://www.skillindia.gov.in/",
+        "last_date": null
+    },
+    {
+        "id": 86,
+        "name": "PM Kaushal Vikas Yojana",
+        "sector": "Employment",
+        "description": "Skill development scheme enabling youth to take up industry-relevant skill training.",
+        "benefits": "Free skill training, certification, and placement assistance.",
+        "eligibility": {
+            "age_min": 15,
+            "age_max": 45,
+            "gender": "all",
+            "income_max": 9999999,
+            "occupation": [
+                "unemployed",
+                "student",
+                "worker"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Bank Account",
+            "Educational Certificates"
+        ],
+        "apply_link": "https://www.pmkvyofficial.org/",
+        "last_date": null
+    },
+    {
+        "id": 87,
+        "name": "e-Shram Portal",
+        "sector": "Employment",
+        "description": "National database of unorganized workers for social security benefits.",
+        "benefits": "Accidental insurance of Rs 2 lakh, access to welfare schemes.",
+        "eligibility": {
+            "age_min": 16,
+            "age_max": 59,
+            "gender": "all",
+            "income_max": 9999999,
+            "occupation": [
+                "labourer",
+                "worker",
+                "self-employed",
+                "farmer"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Bank Account",
+            "Mobile Number"
+        ],
+        "apply_link": "https://eshram.gov.in/",
+        "last_date": null
+    },
+    {
+        "id": 88,
+        "name": "PM Jeevan Jyoti Bima Yojana",
+        "sector": "Employment",
+        "description": "Life insurance scheme offering coverage at premium of Rs 436 per annum.",
+        "benefits": "Life insurance cover of Rs 2 lakh at Rs 436/year premium.",
+        "eligibility": {
+            "age_min": 18,
+            "age_max": 50,
+            "gender": "all",
+            "income_max": 9999999,
+            "occupation": [
+                "all"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Bank Account"
+        ],
+        "apply_link": "https://www.jansuraksha.gov.in/",
+        "last_date": null
+    },
+    {
+        "id": 89,
+        "name": "PM Suraksha Bima Yojana",
+        "sector": "Employment",
+        "description": "Accidental insurance scheme at Rs 20 per annum premium.",
+        "benefits": "Rs 2 lakh for accidental death/full disability, Rs 1 lakh for partial disability.",
+        "eligibility": {
+            "age_min": 18,
+            "age_max": 70,
+            "gender": "all",
+            "income_max": 9999999,
+            "occupation": [
+                "all"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Bank Account"
+        ],
+        "apply_link": "https://www.jansuraksha.gov.in/",
+        "last_date": null
+    },
+    {
+        "id": 90,
+        "name": "PM Rojgar Protsahan Yojana",
+        "sector": "Employment",
+        "description": "Government pays employer's EPS/EPFO contribution for new employees.",
+        "benefits": "Government pays 12% employer EPFO contribution for new hires earning up to Rs 15,000/month.",
+        "eligibility": {
+            "age_min": 18,
+            "age_max": 40,
+            "gender": "all",
+            "income_max": 180000,
+            "occupation": [
+                "salaried",
+                "employee"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "UAN Number",
+            "Employer Registration",
+            "Bank Account"
+        ],
+        "apply_link": "https://www.epfindia.gov.in/",
+        "last_date": null
+    },
+    {
+        "id": 91,
+        "name": "National Apprenticeship Promotion Scheme",
+        "sector": "Employment",
+        "description": "Stipend support to establishments for engaging apprentices.",
+        "benefits": "Government shares 25% of stipend (up to Rs 1,500/month) with employers for apprentices.",
+        "eligibility": {
+            "age_min": 16,
+            "age_max": 30,
+            "gender": "all",
+            "income_max": 9999999,
+            "occupation": [
+                "student",
+                "unemployed"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "10th pass",
+                "12th pass",
+                "graduate"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Educational Certificates",
+            "Bank Account"
+        ],
+        "apply_link": "https://www.apprenticeshipindia.gov.in/",
+        "last_date": null
+    },
+    {
+        "id": 92,
+        "name": "Building & Construction Workers Welfare",
+        "sector": "Employment",
+        "description": "Welfare benefits for registered building and construction workers.",
+        "benefits": "Pension, health insurance, education assistance for children, housing loans, maternity benefit.",
+        "eligibility": {
+            "age_min": 18,
+            "age_max": 60,
+            "gender": "all",
+            "income_max": 300000,
+            "occupation": [
+                "labourer",
+                "worker"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Labour Card",
+            "Bank Account",
+            "Employer Certificate"
+        ],
+        "apply_link": "https://labour.gov.in/",
+        "last_date": null
+    },
+    {
+        "id": 100,
+        "name": "Indira Gandhi National Old Age Pension",
+        "sector": "Senior Citizens",
+        "description": "Monthly pension for BPL senior citizens above 60 years.",
+        "benefits": "Rs 200-500/month pension from central government + state top-up.",
+        "eligibility": {
+            "age_min": 60,
+            "age_max": 100,
+            "gender": "all",
+            "income_max": 200000,
+            "occupation": [
+                "all"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Age Proof",
+            "BPL Card",
+            "Bank Account"
+        ],
+        "apply_link": "https://nsap.nic.in/",
+        "last_date": null
+    },
+    {
+        "id": 101,
+        "name": "Varishtha Pension Bima Yojana",
+        "sector": "Senior Citizens",
+        "description": "Pension scheme by LIC with guaranteed return for senior citizens.",
+        "benefits": "Guaranteed pension of 8% per annum with monthly/quarterly/annual payout options.",
+        "eligibility": {
+            "age_min": 60,
+            "age_max": 100,
+            "gender": "all",
+            "income_max": 9999999,
+            "occupation": [
+                "all"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Age Proof",
+            "PAN Card",
+            "Bank Account"
+        ],
+        "apply_link": "https://licindia.in/",
+        "last_date": null
+    },
+    {
+        "id": 102,
+        "name": "Rashtriya Vayoshri Yojana",
+        "sector": "Senior Citizens",
+        "description": "Provides physical aids and assisted living devices to senior citizens belonging to BPL category.",
+        "benefits": "Free walking sticks, hearing aids, wheelchairs, spectacles for BPL senior citizens.",
+        "eligibility": {
+            "age_min": 60,
+            "age_max": 100,
+            "gender": "all",
+            "income_max": 200000,
+            "occupation": [
+                "all"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Age Proof",
+            "BPL Card",
+            "Medical Certificate"
+        ],
+        "apply_link": "https://www.alimco.in/",
+        "last_date": null
+    },
+    {
+        "id": 103,
+        "name": "Senior Citizen Savings Scheme",
+        "sector": "Senior Citizens",
+        "description": "Savings scheme with attractive interest rates for senior citizens.",
+        "benefits": "Interest rate of 8.2% p.a., quarterly payouts, tax benefits under 80C.",
+        "eligibility": {
+            "age_min": 60,
+            "age_max": 100,
+            "gender": "all",
+            "income_max": 9999999,
+            "occupation": [
+                "all"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Age Proof",
+            "PAN Card",
+            "Bank Account",
+            "Photos"
+        ],
+        "apply_link": "https://www.indiapost.gov.in/",
+        "last_date": null
+    },
+    {
+        "id": 104,
+        "name": "Annapurna Scheme (Senior Citizens)",
+        "sector": "Senior Citizens",
+        "description": "Free foodgrains for eligible senior citizens who are not covered under old age pension.",
+        "benefits": "10 kg of foodgrains per month free of cost.",
+        "eligibility": {
+            "age_min": 65,
+            "age_max": 100,
+            "gender": "all",
+            "income_max": 100000,
+            "occupation": [
+                "all"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Age Proof",
+            "BPL Card",
+            "Income Certificate"
+        ],
+        "apply_link": "https://nfsa.gov.in/",
+        "last_date": null
+    },
+    {
+        "id": 105,
+        "name": "Integrated Programme for Older Persons",
+        "sector": "Senior Citizens",
+        "description": "Financial assistance to NGOs running old age homes, day care, and mobile medicare.",
+        "benefits": "Access to old age homes, day care centres, physiotherapy, mobile health units.",
+        "eligibility": {
+            "age_min": 60,
+            "age_max": 100,
+            "gender": "all",
+            "income_max": 9999999,
+            "occupation": [
+                "all"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Age Proof",
+            "Medical Certificate"
+        ],
+        "apply_link": "https://socialjustice.gov.in/",
+        "last_date": null
+    },
+    {
+        "id": 110,
+        "name": "Ayushman Bharat (PM-JAY)",
+        "sector": "Health",
+        "description": "World's largest health assurance scheme providing Rs 5 lakh coverage per family per year.",
+        "benefits": "Free hospitalization up to Rs 5 lakh/year at empanelled hospitals, cashless treatment.",
+        "eligibility": {
+            "age_min": 0,
+            "age_max": 100,
+            "gender": "all",
+            "income_max": 300000,
+            "occupation": [
+                "all"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Ration Card",
+            "Income Certificate",
+            "Mobile Number"
+        ],
+        "apply_link": "https://pmjay.gov.in/",
+        "last_date": null
+    },
+    {
+        "id": 111,
+        "name": "Rashtriya Swasthya Bima Yojana",
+        "sector": "Health",
+        "description": "Health insurance for BPL families covering hospitalization expenses.",
+        "benefits": "Insurance cover of Rs 30,000/year for BPL families for hospitalization.",
+        "eligibility": {
+            "age_min": 0,
+            "age_max": 100,
+            "gender": "all",
+            "income_max": 200000,
+            "occupation": [
+                "all"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "BPL Card",
+            "Ration Card",
+            "Bank Account"
+        ],
+        "apply_link": "https://www.india.gov.in/",
+        "last_date": null
+    },
+    {
+        "id": 112,
+        "name": "Mission Indradhanush",
+        "sector": "Health",
+        "description": "Immunization programme to cover all children under 2 years and pregnant women.",
+        "benefits": "Free vaccination for 12 diseases including polio, measles, hepatitis B, and more.",
+        "eligibility": {
+            "age_min": 0,
+            "age_max": 5,
+            "gender": "all",
+            "income_max": 9999999,
+            "occupation": [
+                "all"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Birth Certificate",
+            "Immunization Card"
+        ],
+        "apply_link": "https://nhm.gov.in/",
+        "last_date": null
+    },
+    {
+        "id": 113,
+        "name": "National Health Mission",
+        "sector": "Health",
+        "description": "Umbrella programme providing accessible, affordable healthcare to rural and urban poor.",
+        "benefits": "Free healthcare services at government hospitals, ASHA workers, mobile medical units.",
+        "eligibility": {
+            "age_min": 0,
+            "age_max": 100,
+            "gender": "all",
+            "income_max": 300000,
+            "occupation": [
+                "all"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Ration Card"
+        ],
+        "apply_link": "https://nhm.gov.in/",
+        "last_date": null
+    },
+    {
+        "id": 114,
+        "name": "Janani Suraksha Yojana",
+        "sector": "Health",
+        "description": "Cash assistance to pregnant women for institutional delivery.",
+        "benefits": "Rs 700-1400 cash assistance for delivery at government hospitals.",
+        "eligibility": {
+            "age_min": 19,
+            "age_max": 45,
+            "gender": "female",
+            "income_max": 200000,
+            "occupation": [
+                "all"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "married"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "MCP Card",
+            "Bank Account",
+            "BPL Card"
+        ],
+        "apply_link": "https://nhm.gov.in/",
+        "last_date": null
+    },
+    {
+        "id": 115,
+        "name": "Free Dialysis Program",
+        "sector": "Health",
+        "description": "Free dialysis services for BPL patients at district hospitals under PPP model.",
+        "benefits": "Free haemodialysis sessions at government hospitals for economically weaker patients.",
+        "eligibility": {
+            "age_min": 0,
+            "age_max": 100,
+            "gender": "all",
+            "income_max": 200000,
+            "occupation": [
+                "all"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "BPL Card",
+            "Medical Prescription",
+            "Hospital Registration"
+        ],
+        "apply_link": "https://nhm.gov.in/",
+        "last_date": null
+    },
+    {
+        "id": 116,
+        "name": "TB Free India Mission",
+        "sector": "Health",
+        "description": "Nutritional support and incentive to TB patients during treatment.",
+        "benefits": "Rs 500/month nutritional support via DBT for TB patients during treatment period.",
+        "eligibility": {
+            "age_min": 0,
+            "age_max": 100,
+            "gender": "all",
+            "income_max": 9999999,
+            "occupation": [
+                "all"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "TB Treatment Card",
+            "Bank Account"
+        ],
+        "apply_link": "https://nikshay.in/",
+        "last_date": null
+    },
+    {
+        "id": 117,
+        "name": "National Mental Health Programme",
+        "sector": "Health",
+        "description": "Accessible mental healthcare services at district level across India.",
+        "benefits": "Free mental health treatment, counselling, and psychiatric services at district hospitals.",
+        "eligibility": {
+            "age_min": 0,
+            "age_max": 100,
+            "gender": "all",
+            "income_max": 9999999,
+            "occupation": [
+                "all"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "all",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Hospital Registration"
+        ],
+        "apply_link": "https://nhm.gov.in/",
+        "last_date": null
+    },
+    {
+        "id": 120,
+        "name": "Unique Disability ID (UDID)",
+        "sector": "Disability",
+        "description": "Universal ID for persons with disabilities to avail benefits of government schemes.",
+        "benefits": "Single document for availing all disability-related benefits and concessions.",
+        "eligibility": {
+            "age_min": 0,
+            "age_max": 100,
+            "gender": "all",
+            "income_max": 9999999,
+            "occupation": [
+                "all"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "yes",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Disability Certificate",
+            "Photo",
+            "Address Proof"
+        ],
+        "apply_link": "https://www.swavlambancard.gov.in/",
+        "last_date": null
+    },
+    {
+        "id": 121,
+        "name": "Deendayal Disabled Rehabilitation Scheme",
+        "sector": "Disability",
+        "description": "Financial assistance to NGOs for rehabilitation services for persons with disabilities.",
+        "benefits": "Vocational training, special education, rehabilitation services for disabled persons.",
+        "eligibility": {
+            "age_min": 0,
+            "age_max": 100,
+            "gender": "all",
+            "income_max": 9999999,
+            "occupation": [
+                "all"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "yes",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Disability Certificate",
+            "Address Proof"
+        ],
+        "apply_link": "https://disabilityaffairs.gov.in/",
+        "last_date": null
+    },
+    {
+        "id": 122,
+        "name": "Accessible India Campaign",
+        "sector": "Disability",
+        "description": "Making public spaces, transport, and ICT accessible for persons with disabilities.",
+        "benefits": "Accessible buildings, transport, websites, and public facilities for disabled persons.",
+        "eligibility": {
+            "age_min": 0,
+            "age_max": 100,
+            "gender": "all",
+            "income_max": 9999999,
+            "occupation": [
+                "all"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "yes",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Disability Certificate"
+        ],
+        "apply_link": "https://disabilityaffairs.gov.in/",
+        "last_date": null
+    },
+    {
+        "id": 123,
+        "name": "ADIP Scheme",
+        "sector": "Disability",
+        "description": "Assistance to Disabled Persons for purchase/fitting of aids and appliances.",
+        "benefits": "Free aids and appliances like hearing aids, wheelchairs, prosthetics, Braille kits.",
+        "eligibility": {
+            "age_min": 0,
+            "age_max": 100,
+            "gender": "all",
+            "income_max": 300000,
+            "occupation": [
+                "all"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "yes",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Disability Certificate",
+            "Income Certificate",
+            "Bank Account"
+        ],
+        "apply_link": "https://www.alimco.in/",
+        "last_date": null
+    },
+    {
+        "id": 124,
+        "name": "National Handicapped Finance Development Corporation",
+        "sector": "Disability",
+        "description": "Concessional loans for self-employment ventures by persons with disabilities.",
+        "benefits": "Loans up to Rs 25 lakh at low interest for self-employment of disabled persons.",
+        "eligibility": {
+            "age_min": 18,
+            "age_max": 55,
+            "gender": "all",
+            "income_max": 300000,
+            "occupation": [
+                "self-employed",
+                "entrepreneur",
+                "unemployed"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "yes",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Disability Certificate",
+            "Income Certificate",
+            "Business Plan",
+            "Bank Account"
+        ],
+        "apply_link": "https://nhfdc.nic.in/",
+        "last_date": null
+    },
+    {
+        "id": 125,
+        "name": "Disability Pension Scheme",
+        "sector": "Disability",
+        "description": "Monthly pension for persons with severe disabilities (80%+).",
+        "benefits": "Monthly pension of Rs 300-500 from central government + state contribution.",
+        "eligibility": {
+            "age_min": 18,
+            "age_max": 100,
+            "gender": "all",
+            "income_max": 200000,
+            "occupation": [
+                "all"
+            ],
+            "category": [
+                "all"
+            ],
+            "disability": "yes",
+            "education": [
+                "all"
+            ],
+            "marital_status": "all"
+        },
+        "documents": [
+            "Aadhaar Card",
+            "Disability Certificate (80%+)",
+            "Income Certificate",
+            "Bank Account"
+        ],
+        "apply_link": "https://nsap.nic.in/",
+        "last_date": null
+    }
+]
