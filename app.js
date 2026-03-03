@@ -1,8 +1,6 @@
-// EligibleMe - App Logic
-// Auto-detect: works whether opened via Flask (http) or directly as a file
-const API_BASE = window.location.protocol === 'file:' ? 'http://127.0.0.1:5000' : '';
+// EligibleMe - Fully Client-Side App Logic
+// No backend needed – loads schemes.json directly (works on GitHub Pages)
 
-// Sector tag color mapping
 const SECTOR_COLORS = {
   'Education': 'tag-education',
   'Women Welfare': 'tag-women',
@@ -48,7 +46,6 @@ function initNavbar() {
     navbar.classList.toggle('scrolled', window.scrollY > 50);
   });
 
-  // Active link highlight
   document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', (e) => {
       document.querySelectorAll('.nav-links a').forEach(l => l.classList.remove('active'));
@@ -65,7 +62,6 @@ function initMobileMenu() {
     links.classList.toggle('open');
     btn.textContent = links.classList.contains('open') ? '✕' : '☰';
   });
-  // Close on link click
   links.querySelectorAll('a').forEach(a => {
     a.addEventListener('click', () => {
       links.classList.remove('open');
@@ -74,19 +70,19 @@ function initMobileMenu() {
   });
 }
 
-// ── Load all schemes ──
+// ── Load all schemes (directly from schemes.json – no Flask needed) ──
 async function loadSchemes() {
   try {
-    const res = await fetch(`${API_BASE}/api/schemes`);
-    const data = await res.json();
-    allSchemes = data.schemes;
+    const res = await fetch('schemes.json');
+    if (!res.ok) throw new Error('Failed to fetch schemes.json');
+    allSchemes = await res.json();
     document.getElementById('totalSchemes').textContent = allSchemes.length + '+';
     buildSectorFilters();
     renderBrowseGrid();
   } catch (err) {
     console.error('Failed to load schemes:', err);
     document.getElementById('browseGrid').innerHTML =
-      '<div class="no-results"><div class="emoji">⚠️</div><p>Could not connect to server. Make sure the Flask backend is running on port 5000.</p></div>';
+      '<div class="no-results"><div class="emoji">⚠️</div><p>Could not load schemes. Please refresh the page.</p></div>';
   }
 }
 
@@ -176,10 +172,47 @@ function initSearch() {
   });
 }
 
+// ── Client-Side Eligibility Check (ported from Python) ──
+function checkEligibility(user, scheme) {
+  const elig = scheme.eligibility || {};
+
+  const age = user.age || 0;
+  if (age < (elig.age_min || 0) || age > (elig.age_max || 999)) return false;
+
+  const gender = (user.gender || '').toLowerCase();
+  const schemeGender = (elig.gender || 'all').toLowerCase();
+  if (schemeGender !== 'all' && gender !== schemeGender) return false;
+
+  const income = user.income || 0;
+  if (income > (elig.income_max || 9999999)) return false;
+
+  const occupation = (user.occupation || '').toLowerCase();
+  const schemeOccupations = (elig.occupation || ['all']).map(o => o.toLowerCase());
+  if (!schemeOccupations.includes('all') && !schemeOccupations.includes(occupation)) return false;
+
+  const category = (user.category || '').toLowerCase();
+  const schemeCategories = (elig.category || ['all']).map(c => c.toLowerCase());
+  if (!schemeCategories.includes('all') && !schemeCategories.includes(category)) return false;
+
+  const disability = (user.disability || 'no').toLowerCase();
+  const schemeDisability = (elig.disability || 'all').toLowerCase();
+  if (schemeDisability === 'yes' && disability !== 'yes') return false;
+
+  const education = (user.education || '').toLowerCase();
+  const schemeEducation = (elig.education || ['all']).map(e => e.toLowerCase());
+  if (!schemeEducation.includes('all') && !schemeEducation.includes(education)) return false;
+
+  const marital = (user.marital_status || '').toLowerCase();
+  const schemeMarital = (elig.marital_status || 'all').toLowerCase();
+  if (schemeMarital !== 'all' && marital !== schemeMarital) return false;
+
+  return true;
+}
+
 // ── Eligibility Form ──
 function initEligibilityForm() {
   const form = document.getElementById('eligibilityForm');
-  form.addEventListener('submit', async (e) => {
+  form.addEventListener('submit', (e) => {
     e.preventDefault();
     const btn = document.getElementById('checkBtn');
     btn.innerHTML = '<span class="spinner"></span> Checking...';
@@ -197,21 +230,19 @@ function initEligibilityForm() {
       marital_status: document.getElementById('maritalStatus').value
     };
 
-    try {
-      const res = await fetch(`${API_BASE}/api/check`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(userData)
-      });
-      const data = await res.json();
-      showResults(data.eligible_schemes, data.count);
-    } catch (err) {
-      alert('Could not connect to server. Please make sure the Flask backend is running.');
-      console.error(err);
-    } finally {
-      btn.innerHTML = '🔍 Find My Schemes';
-      btn.disabled = false;
-    }
+    // Run eligibility check entirely in the browser
+    setTimeout(() => {
+      try {
+        const matched = allSchemes.filter(scheme => checkEligibility(userData, scheme));
+        showResults(matched, matched.length);
+      } catch (err) {
+        console.error(err);
+        alert('Something went wrong while checking eligibility. Please try again.');
+      } finally {
+        btn.innerHTML = '🔍 Find My Schemes';
+        btn.disabled = false;
+      }
+    }, 400); // Small delay for spinner UX
   });
 }
 
@@ -255,7 +286,6 @@ function openSchemeModal(scheme) {
   document.getElementById('modalDesc').textContent = scheme.description;
   document.getElementById('modalBenefits').textContent = scheme.benefits;
 
-  // Eligibility summary
   const e = scheme.eligibility;
   let eligText = '';
   if (e.age_min !== undefined) eligText += `Age: ${e.age_min}-${e.age_max} years\n`;
@@ -268,11 +298,9 @@ function openSchemeModal(scheme) {
   if (e.marital_status !== 'all') eligText += `Marital Status: ${e.marital_status}\n`;
   document.getElementById('modalEligibility').textContent = eligText || 'Open to all eligible citizens.';
 
-  // Documents
   const docsUl = document.getElementById('modalDocs');
   docsUl.innerHTML = scheme.documents.map(d => `<li>${d}</li>`).join('');
 
-  // Last date
   const dateSection = document.getElementById('modalDateSection');
   const dateEl = document.getElementById('modalDate');
   if (scheme.last_date) {
@@ -282,9 +310,7 @@ function openSchemeModal(scheme) {
     dateSection.style.display = 'none';
   }
 
-  // Apply link
   document.getElementById('modalApplyLink').href = scheme.apply_link;
-
   overlay.classList.add('active');
 }
 
@@ -298,14 +324,102 @@ function attachCardListeners(container) {
   });
 }
 
-// ── Chatbot ──
+// ── Client-Side Chatbot (ported from Python) ──
+const CHATBOT_RESPONSES = {
+  greeting: "Hello! 👋 I'm your EligibleMe assistant. I can help you find government schemes. Try asking me about schemes for students, farmers, women, or any other category!",
+  help: "I can help you with:\n• Finding schemes by sector (education, agriculture, startups, etc.)\n• Searching for specific schemes by name\n• Understanding eligibility criteria\n• Knowing required documents\n\nJust ask me something like 'Show me schemes for farmers' or 'What is PM Kisan?'",
+  thanks: "You're welcome! 😊 Feel free to ask if you need more help finding government schemes.",
+  fallback: "I'm not sure I understand. Try asking about:\n• Schemes for a specific group (students, farmers, women, etc.)\n• A specific scheme by name\n• Schemes in a sector (education, health, startups)\n• Or type 'help' for more options."
+};
+
+const SECTOR_KEYWORDS = {
+  'Education': ['student', 'scholarship', 'education', 'study', 'college', 'university', 'school', 'exam', 'learn'],
+  'Women Welfare': ['women', 'woman', 'girl', 'female', 'mahila', 'beti', 'matru', 'mother', 'pregnant', 'lady'],
+  'Agriculture': ['farmer', 'farm', 'agriculture', 'crop', 'kisan', 'krishi', 'soil', 'irrigation', 'dairy', 'fish', 'livestock'],
+  'Startups': ['startup', 'business', 'entrepreneur', 'msme', 'loan', 'mudra', 'enterprise', 'company'],
+  'Employment': ['job', 'employ', 'worker', 'labour', 'pension', 'insurance', 'skill', 'apprentice', 'career', 'shram'],
+  'Senior Citizens': ['senior', 'old age', 'elderly', 'vayoshri', 'retired', 'retirement', '60 years'],
+  'Health': ['health', 'hospital', 'medical', 'doctor', 'ayushman', 'treatment', 'disease', 'dialysis', 'mental health', 'immunization'],
+  'Disability': ['disability', 'disabled', 'handicap', 'differently abled', 'blind', 'deaf', 'wheelchair']
+};
+
+function chatbotRespond(message) {
+  const msg = message.toLowerCase().trim();
+
+  if (['hello', 'hi', 'hey', 'namaste', 'good morning', 'good evening'].some(w => msg.includes(w))) {
+    return CHATBOT_RESPONSES.greeting;
+  }
+
+  if (['help', '?', 'what can you do', 'options'].includes(msg)) {
+    return CHATBOT_RESPONSES.help;
+  }
+
+  if (['thank', 'thanks', 'dhanyavaad', 'shukriya'].some(w => msg.includes(w))) {
+    return CHATBOT_RESPONSES.thanks;
+  }
+
+  // Check for specific scheme name
+  for (const scheme of allSchemes) {
+    const schemeLower = scheme.name.toLowerCase();
+    const words = schemeLower.split(' ').filter(w => w.length > 4);
+    if (schemeLower.includes(msg) || words.some(word => msg.includes(word))) {
+      return formatSchemeResponse(scheme);
+    }
+  }
+
+  // Check sector keywords
+  for (const [sector, keywords] of Object.entries(SECTOR_KEYWORDS)) {
+    if (keywords.some(kw => msg.includes(kw))) {
+      const sectorSchemes = allSchemes.filter(s => s.sector.toLowerCase() === sector.toLowerCase());
+      if (sectorSchemes.length > 0) {
+        let response = `📋 **${sector} Schemes** (${sectorSchemes.length} found):\n\n`;
+        sectorSchemes.slice(0, 8).forEach(s => {
+          response += `• **${s.name}**: ${s.benefits.substring(0, 80)}...\n`;
+        });
+        if (sectorSchemes.length > 8) {
+          response += `\n...and ${sectorSchemes.length - 8} more! Use the Browse section to see all.`;
+        }
+        response += '\n\n💡 Click on any scheme card for full details, or ask me about a specific scheme!';
+        return response;
+      }
+    }
+  }
+
+  if (['eligible', 'eligibility', 'qualify', 'can i get', 'am i eligible'].some(w => msg.includes(w))) {
+    return 'To check your eligibility, please use the **Check Eligibility** form above. Fill in your details like age, income, occupation, and category – I\'ll match you with the best schemes! 🔍';
+  }
+
+  if (['document', 'documents', 'papers', 'required', 'what do i need'].some(w => msg.includes(w))) {
+    return '📄 Most government schemes require these common documents:\n\n• Aadhaar Card\n• Income Certificate\n• Bank Account/Passbook\n• Passport-size Photos\n• Caste Certificate (if applicable)\n• Address Proof\n\nSpecific documents vary by scheme. Click on any scheme card to see its exact requirements!';
+  }
+
+  if (['how to apply', 'apply', 'application', 'register', 'sign up'].some(w => msg.includes(w))) {
+    return '📝 **How to Apply for Government Schemes:**\n\n1. Check your eligibility using our form above\n2. Click on the scheme card to see details\n3. Click \'Apply Now\' to go to the official portal\n4. Register on the portal with Aadhaar/mobile\n5. Fill in the application form\n6. Upload required documents\n7. Submit and save the reference number\n\n💡 You can also visit your nearest CSC (Common Service Centre) for help!';
+  }
+
+  return CHATBOT_RESPONSES.fallback;
+}
+
+function formatSchemeResponse(scheme) {
+  let response = `📌 **${scheme.name}**\n`;
+  response += `🏷️ Sector: ${scheme.sector}\n\n`;
+  response += `📝 ${scheme.description}\n\n`;
+  response += `💰 **Benefits:** ${scheme.benefits}\n\n`;
+  response += `📄 **Documents needed:** ${scheme.documents.join(', ')}\n\n`;
+  if (scheme.last_date) {
+    response += `📅 **Last Date:** ${formatDate(scheme.last_date)}\n\n`;
+  }
+  response += `🔗 **Apply:** ${scheme.apply_link}`;
+  return response;
+}
+
+// ── Chatbot UI ──
 function initChatbot() {
   const fab = document.getElementById('chatbotFab');
   const panel = document.getElementById('chatbotPanel');
   const input = document.getElementById('chatInput');
   const sendBtn = document.getElementById('chatSendBtn');
 
-  // Toggle chatbot
   fab.addEventListener('click', () => {
     panel.classList.toggle('open');
     fab.classList.toggle('active');
@@ -317,13 +431,11 @@ function initChatbot() {
     }
   });
 
-  // Send message
   sendBtn.addEventListener('click', () => sendChatMessage());
   input.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') sendChatMessage();
   });
 
-  // Suggestion buttons
   document.querySelectorAll('.chat-suggestion').forEach(btn => {
     btn.addEventListener('click', () => {
       const msg = btn.dataset.msg;
@@ -333,13 +445,12 @@ function initChatbot() {
   });
 }
 
-async function sendChatMessage() {
+function sendChatMessage() {
   const input = document.getElementById('chatInput');
   const messages = document.getElementById('chatMessages');
   const msg = input.value.trim();
   if (!msg) return;
 
-  // Add user message
   addChatMsg(msg, 'user');
   input.value = '';
 
@@ -350,25 +461,13 @@ async function sendChatMessage() {
   messages.appendChild(typing);
   messages.scrollTop = messages.scrollHeight;
 
-  try {
-    const res = await fetch(`${API_BASE}/api/chatbot`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ message: msg })
-    });
-    const data = await res.json();
-
-    // Remove typing indicator
+  // Simulate a small delay for a natural feel, then respond
+  setTimeout(() => {
     typing.remove();
-
-    // Format response (convert **bold** to styled text)
-    const formatted = data.response
-      .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+    const response = chatbotRespond(msg);
+    const formatted = response.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
     addChatMsg(formatted, 'bot', true);
-  } catch (err) {
-    typing.remove();
-    addChatMsg('Sorry, I couldn\'t connect to the server. Please make sure the backend is running.', 'bot');
-  }
+  }, 500);
 }
 
 function addChatMsg(text, type, isHTML = false) {
@@ -396,7 +495,6 @@ function initWhatsAppWidget() {
   const confirmedNumber = document.getElementById('waConfirmedNumber');
 
   function openPanel() {
-    // Always reset to a clean form state when (re-)opening
     input.value = '';
     input.style.outline = '';
     input.placeholder = 'e.g. 98765 43210';
@@ -412,34 +510,28 @@ function initWhatsAppWidget() {
     fab.style.transform = '';
   }
 
-  // FAB toggle
   fab.addEventListener('click', (e) => {
     e.stopPropagation();
     panel.classList.contains('open') ? closePanel() : openPanel();
   });
 
-  // Close (×) button – stop propagation so document handler doesn't interfere
   closeBtn.addEventListener('click', (e) => {
     e.stopPropagation();
     closePanel();
   });
 
-  // Clicks inside the panel must NOT bubble to the document close handler
   panel.addEventListener('click', (e) => {
     e.stopPropagation();
   });
 
-  // Close when clicking anywhere outside the panel or FAB
   document.addEventListener('click', () => {
     closePanel();
   });
 
-  // Allow only digits, max 10
   input.addEventListener('input', () => {
     input.value = input.value.replace(/\D/g, '').slice(0, 10);
   });
 
-  // Subscribe
   subscribeBtn.addEventListener('click', () => {
     const num = input.value.trim();
     if (num.length < 10) {
@@ -458,4 +550,3 @@ function initWhatsAppWidget() {
     successDiv.style.display = 'flex';
   });
 }
-
